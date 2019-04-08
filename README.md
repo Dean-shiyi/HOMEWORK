@@ -4,6 +4,7 @@
  3. <a href ="./socket编程作业/socket作业.md"> socket作业 </a>
  4. <a href ="./thread作业/thread作业.md"> thread作业 </a>
  5. <a href ="./tcp_ip综合作业/tcp_ip综合作业.md"> tcp_ip综合作业</a>
+ 6. <a href ="./sockettest"> sockettest </a>
 
 
 
