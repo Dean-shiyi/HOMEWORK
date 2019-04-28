@@ -90,7 +90,7 @@ tname VARCHAR(10)
 10：查缺考的学生的学号和课程号。
  
  ```
- SELECT sno,cno FROM sc WHERE grade = 0;
+ SELECT sno,cno FROM sc WHERE grade is  null;
  ```
 11：查年龄为空值的学生的学号和姓名。
  
@@ -127,7 +127,7 @@ tname VARCHAR(10)
  
  ```
  SELECT DISTINCT COUNT(s.sno) FROM s join sc on s.sno=sc.sno JOIN c on sc.cno= c.cno WHERE c.cname in ('茶艺','电影');
- SELECT DISTINCT COUNT(sc.sno) FROM sc JOIN c on sc.cno=c.cno WHERE c.cname in ('茶艺','电影');
+ SELECT COUNT(DISTINCT sc.sno) FROM sc JOIN c on sc.cno=c.cno WHERE c.cname in ('茶艺','电影');
  ```
 18：计算选修了C1课程的学生平均成绩。
  

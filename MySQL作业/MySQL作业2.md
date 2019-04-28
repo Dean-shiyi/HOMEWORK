@@ -25,7 +25,7 @@
 （5）. 写出sql语句，获取员工中哪个姓名具有重名现象（3分）
  
  ```
- SELECT name FROM employee GROUP BY name HAVING COUNT(name) >= 2;
+ SELECT name FROM employee GROUP BY name HAVING COUNT(name) > 1;
  ```
 （6）. 写出sql语句，查询所有姓张的员工（3分）
  
@@ -46,6 +46,7 @@
  
  ```
  INSERT into employee VALUES(8,'刘四','女',27,'北京');
+ insert into employee (`sex`,`name`,`age`) values (`男`,`李宁`,`35`);
  ```
 （10）.写出sql语句，修改员工张四的住址为南京（2分）
  

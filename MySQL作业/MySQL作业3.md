@@ -44,7 +44,8 @@ y_name 姓名
 1、查询年龄在25至30岁之间的男员工的姓名和住址。 
  
  ```
- SELECT y_name,y_Address from worker WHERE y_sex='男' and y_age > 25 and y_age < 30;
+ SELECT y_name,y_Address from worker WHERE y_sex='男' and y_age >= 25 and y_age =< 30;
+  SELECT y_name,y_Address from worker WHERE y_sex='男' and age between 25 and 30;
  ```
 
 2、查询财务部所有40岁以下男员工的所有信息 
@@ -55,7 +56,7 @@ y_name 姓名
 3、查询人事部年龄最大的女员工姓名 
  
  ```
- SELECT a.y_name as name FROM Worker as a join department as b on a.b_id = b.b_id WHERE y_sex = '女' ORDER BY y_age desc LIMIT 0,1 ;
+ SELECT a.y_name as name FROM Worker as a join department as b on a.b_id = b.b_id WHERE y_sex = '女' and b_name = '财务部' ORDER BY y_age desc LIMIT 0,1 ;
  ```
 4、2号新到一名员工，已知姓名，性别，年龄，将此员工加入到员工表  
  
