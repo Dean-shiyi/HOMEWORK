@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li {
+            list-style-type: none;
+        }
+        .l1{
+            background: green;
+            width: 100px;
+            padding: 20px 50px;
+            border: 2px solid blue;
+            font-size: x-large;
+            color: blue;
+            text-align: center;
+        }
+
+        .l2{
+            background: green;
+            width: 100px;
+            padding: 20px 50px;
+            border: 2px solid black;
+            font-size: x-large;
+            color: black;
+            text-align: center;
+        }
+        #h3,#h2{
+            display: none;
+        }
+        #t2:hover +#b2>#h3{
+            display: inline-block;
+        }
+        #t1:hover +#b1>#h2{
+            display: inline-block;
+        }
+        #h2:hover{
+            display: inline-block;
+        }
+
+
+    </style>
+</head>
+<body>
+<ul id="h1">
+    <li class="l1" id="t1">章节</li>
+    <li id="b1">
+        <ul id="h2">
+            <li class="l1" id="t2">python</li>
+            <li id="b2">
+                <ul id="h3">
+                    <li class="l2">GUI</li>
+                    <li class="l2">SOCKET</li>
+                    <li class="l2">ASYNC</li>
+                </ul>
+            </li>
+            <li class="l1">go</li>
+        </ul>
+    </li>
+    <li class="l1">问答</li>
+    <li class="l1">笔记</li>
+    <li class="l1">提问</li>
+</ul>
+</body>
+</html>
